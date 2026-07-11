@@ -48,7 +48,6 @@ function createGalleryItem(item) {
 			<img src="${item.url}" alt="${item.title}" />
 			<p><strong>${item.title}</strong></p>
 			<p>${item.date}</p>
-			<p>${item.explanation}</p>
 		`;
 	} else {
 		card.innerHTML = `
@@ -60,7 +59,6 @@ function createGalleryItem(item) {
 			></iframe>
 			<p><strong>${item.title}</strong></p>
 			<p>${item.date}</p>
-			<p>${item.explanation}</p>
 		`;
 	}
 
