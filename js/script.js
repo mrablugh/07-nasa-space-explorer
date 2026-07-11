@@ -145,7 +145,7 @@ async function loadSpaceImages() {
 
 		const data = await response.json();
 
-		console.log('NASA API response:', data); // Log the response for debugging
+		// console.log('NASA API response:', data); // Log the response for debugging
 
 		gallery.innerHTML = '';
 
