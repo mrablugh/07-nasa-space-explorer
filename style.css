@@ -5,10 +5,21 @@
   padding: 0;
 }
 
+:root {
+  --nasa-blue: #0b3d91;
+  --nasa-blue-dark: #061f4a;
+  --nasa-red: #fc3d21;
+  --nasa-light-gray: #d0d2d3;
+  --nasa-medium-gray: #5f6163;
+  --nasa-white: #ffffff;
+  --nasa-text: #1b1e3d;
+}
+
 /* Base page styles */
 body {
   font-family: 'Public Sans', sans-serif;
-  background-color: #f1f1f1;
+  background-color: var(--nasa-light-gray);
+  color: var(--nasa-text);
   padding: 20px;
 }
 
@@ -31,11 +42,12 @@ body {
 h1 {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  color: #212121;
+  color: var(--nasa-blue-dark);
 }
 
 h2 {
   font-family: 'Inter', sans-serif;
+  color: var(--nasa-blue-dark);
 }
 
 /* Logo */
@@ -59,9 +71,9 @@ input[type="date"],
 button {
   font-family: Arial, sans-serif;
   font-weight: normal;
-  color: #666;
+  color: var(--nasa-blue-dark);
   padding: 10px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--nasa-medium-gray);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.4;
@@ -70,12 +82,12 @@ button {
 
 /* Button specific */
 button {
-  background-color: #d3d3d3;
-  color: black;
+  background-color: var(--nasa-blue);
+  color: var(--nasa-white);
   cursor: pointer;
 }
 button:hover {
-  background-color: #bfbfbf;
+  background-color: var(--nasa-red);
 }
 
 /* Stack horizontally on wider screens */
@@ -105,10 +117,10 @@ button:hover {
   flex: 1 1 100%;  /* full width by default */
   min-width: 280px;
   max-width: 500px;
-  background: white;
+  background: var(--nasa-white);
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(11, 61, 145, 0.12);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -119,7 +131,7 @@ button:hover {
 .gallery-item:hover,
 .gallery-item:focus {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 16px rgba(11, 61, 145, 0.18);
   outline: none;
 }
 
@@ -163,7 +175,7 @@ button:hover {
   flex: 1 1 100%;
   text-align: center;
   padding: 40px;
-  color: #666;
+  color: var(--nasa-medium-gray);
 }
 
 .placeholder-icon {
@@ -174,7 +186,7 @@ button:hover {
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(6, 31, 74, 0.82);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,10 +203,10 @@ button:hover {
   width: min(900px, 100%);
   max-height: 90vh;
   overflow-y: auto;
-  background: white;
+  background: var(--nasa-white);
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 60px rgba(6, 31, 74, 0.35);
 }
 
 .modal-media img,
@@ -210,18 +222,18 @@ button:hover {
 .modal-content h2 {
   margin-top: 16px;
   margin-bottom: 8px;
-  color: #212121;
+  color: var(--nasa-blue-dark);
 }
 
 .modal-date {
   font-family: "DM Mono", monospace;
-  color: #666;
+  color: var(--nasa-medium-gray);
   font-size: 14px;
   margin-bottom: 12px;
 }
 
 .modal-explanation {
-  color: #333;
+  color: var(--nasa-text);
   line-height: 1.6;
 }
 
@@ -233,8 +245,8 @@ button:hover {
   height: 40px;
   border: none;
   border-radius: 50%;
-  background: #f1f1f1;
-  color: #212121;
+  background: var(--nasa-light-gray);
+  color: var(--nasa-blue-dark);
   font-size: 28px;
   line-height: 1;
   cursor: pointer;
