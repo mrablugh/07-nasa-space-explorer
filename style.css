@@ -7,7 +7,7 @@
 
 /* Base page styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Public Sans', sans-serif;
   background-color: #f1f1f1;
   padding: 20px;
 }
@@ -29,9 +29,13 @@ body {
 }
 
 h1 {
-  font-family: Verdana, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   color: #212121;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
 }
 
 /* Logo */
