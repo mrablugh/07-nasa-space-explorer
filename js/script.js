@@ -133,7 +133,7 @@ async function loadSpaceImages() {
 		return;
 	}
 
-	gallery.innerHTML = '<div class="placeholder"><p>Loading space images...</p></div>';
+	gallery.innerHTML = '<div class="placeholder"><p>🔄 Loading space images...</p></div>';
 
 	try {
 		const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&start_date=${startDate}&end_date=${endDate}`;
