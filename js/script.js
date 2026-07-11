@@ -46,7 +46,7 @@ function createGalleryItem(item) {
 	if (item.media_type === 'image') {
 		card.innerHTML = `
 			<img src="${item.url}" alt="${item.title}" />
-			<p><strong>${item.title}</strong></p>
+			<p class="gallery-title"><strong>${item.title}</strong></p>
 			<p class="gallery-date">${item.date}</p>
 		`;
 	} else {
@@ -57,7 +57,7 @@ function createGalleryItem(item) {
 				allowfullscreen
 				loading="lazy"
 			></iframe>
-			<p><strong>${item.title}</strong></p>
+			<p class="gallery-title"><strong>${item.title}</strong></p>
 			<p class="gallery-date">${item.date}</p>
 		`;
 	}

@@ -162,6 +162,11 @@ button:hover {
   font-size: 14px;
 }
 
+.gallery-item p.gallery-title {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
 .gallery-date {
   font-family: "DM Mono", monospace;
 }
